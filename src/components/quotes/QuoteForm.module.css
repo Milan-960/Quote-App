@@ -1,6 +1,9 @@
 .form {
   position: relative;
 }
+.lodo {
+  display: none;
+}
 
 .loading {
   position: absolute;
