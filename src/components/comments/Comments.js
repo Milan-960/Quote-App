@@ -19,7 +19,7 @@ const Comments = () => {
         </button>
       )}
       {isAddingComment && <NewCommentForm />}
-      <p>👆🏻 we whould like to received comments from you ☝🏻</p>
+      <p>👆🏻 I whould like to received comments from you ☝🏻</p>
     </section>
   );
 };
