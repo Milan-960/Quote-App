@@ -1,4 +1,6 @@
 import QuoteList from "../components/quotes/QuoteList";
+import useHttp from "../Hooks/useHttp";
+import { getAllQuotes } from "../Lib/api";
 
 const Dummy_Quotes = [
   { id: "m1", author: "Milan", text: "Learning React is fun!!" },
