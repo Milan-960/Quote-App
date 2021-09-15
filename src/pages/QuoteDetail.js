@@ -10,7 +10,7 @@ const QuoteDetail = () => {
   const match = useRouteMatch();
   const params = useParams();
 
-  const { quoteList } = params;
+  const { quoteId } = params;
 
   const {
     sendRequest,
@@ -20,8 +20,8 @@ const QuoteDetail = () => {
   } = useHttp(getSingleQuote, true);
 
   useEffect(() => {
-    sendRequest(quoteList);
-  }, [sendRequest, quoteList]);
+    sendRequest(quoteId);
+  }, [sendRequest, quoteId]);
 
   if (status === "pending") {
     return (
@@ -35,8 +35,8 @@ const QuoteDetail = () => {
     return <p className="centered">{error}</p>;
   }
 
-  if (loadedQuote) {
-    return <p> No Quote Found!!</p>;
+  if (!loadedQuote.text) {
+    return <p className="centered">!! No Quote Found !!</p>;
   }
 
   return (
