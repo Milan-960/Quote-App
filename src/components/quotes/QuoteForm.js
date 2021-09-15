@@ -33,7 +33,7 @@ const QuoteForm = (props) => {
   return (
     <Fragment>
       <Prompt
-        className="lodo"
+    
         when={isEntering}
         message={(location) => "Are you sure you want to leave?"}
       />

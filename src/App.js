@@ -15,7 +15,7 @@ function App() {
         <Route path="/quotes" exact>
           <AllQuotes />
         </Route>
-        <Route path="/quotes/:quoteList">
+        <Route path="/quotes/:quoteId">
           <QuoteDetail />
         </Route>
         <Route path="/newquotes">
