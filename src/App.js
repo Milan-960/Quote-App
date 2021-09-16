@@ -1,13 +1,16 @@
 import React, { Suspense } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
+
 // import AllQuotes from "./pages/AllQuotes";
-import QuoteDetail from "./pages/QuoteDetail";
+// import QuoteDetail from "./pages/QuoteDetail";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
 
 const NewQuotes = React.lazy(() => import("./pages/NewQuotes"));
+const QuoteDetail = React.lazy(() => import("./pages/QuoteDetail"));
 const AllQuotes = React.lazy(() => import("./pages/AllQuotes"));
+// const AllQuotes = React.lazy(() => import("./pages/AllQuotes"));
 
 function App() {
   return (
