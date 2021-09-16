@@ -1,9 +1,12 @@
+import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 import AllQuotes from "./pages/AllQuotes";
-import NewQutoes from "./pages/NewQuotes";
+// import NewQutoes from "./pages/NewQuotes";
 import QuoteDetail from "./pages/QuoteDetail";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
+
+const NewQutoes = React.lazy(() => import("./pages/NewQuotes"));
 
 function App() {
   return (
