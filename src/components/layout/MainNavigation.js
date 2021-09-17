@@ -21,6 +21,19 @@ const MainNavigation = () => {
               Add a New Quote
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/login" activeClassName={classes.active}>
+              Login
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/profile" activeClassName={classes.active}>
+              Profile
+            </NavLink>
+          </li>
+          <li>
+            <button>Logout</button>
+          </li>
         </ul>
       </nav>
     </header>

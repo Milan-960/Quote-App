@@ -19,6 +19,7 @@
   display: flex;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 .nav li {
@@ -35,4 +36,24 @@
 .nav a:active,
 .nav a.active {
   color: #88dfdf;
+}
+
+.header button {
+  font: inherit;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.header a:hover {
+  color: #c291e2;
+}
+
+.header button:hover {
+  background-color: #c291e2;
+  color: #38015c;
 }

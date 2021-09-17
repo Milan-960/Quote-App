@@ -6,11 +6,12 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
+import UserProfile from "./components/Profile/UserProfile";
 
 const NewQuotes = React.lazy(() => import("./pages/NewQuotes"));
 const QuoteDetail = React.lazy(() => import("./pages/QuoteDetail"));
 const AllQuotes = React.lazy(() => import("./pages/AllQuotes"));
-// const AllQuotes = React.lazy(() => import("./pages/AllQuotes"));
+const AuthPage = React.lazy(() => import("./pages/AuthPage"));
 
 function App() {
   return (
@@ -34,6 +35,12 @@ function App() {
           </Route>
           <Route path="/newquotes">
             <NewQuotes />
+          </Route>
+          <Route path="/login">
+            <AuthPage />
+          </Route>
+          <Route path="/profile">
+            <UserProfile />
           </Route>
           <Route path="*">
             <NotFound />
