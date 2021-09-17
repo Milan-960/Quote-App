@@ -1,7 +1,10 @@
 import classes from "./MainNavigation.module.css";
 import { NavLink } from "react-router-dom";
+import { useContext } from "react";
 
 const MainNavigation = () => {
+  const authCtx = useContext(AuthContext);
+
   return (
     <header className={classes.header}>
       <div>
