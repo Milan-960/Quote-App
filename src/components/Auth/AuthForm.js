@@ -6,6 +6,7 @@ import classes from "./AuthForm.module.css";
 const AuthForm = () => {
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
+
   const authCtx = useContext(AuthContext);
 
   const [isLogin, setIsLogin] = useState(true);
@@ -62,7 +63,7 @@ const AuthForm = () => {
         }
       })
       .then((data) => {
-        console.log(data);
+        authCtx.login(data.idToken);
       })
       .catch((err) => {
         alert(err.message);
