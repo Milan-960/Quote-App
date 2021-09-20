@@ -4,9 +4,20 @@
 }
 
 .profile h1 {
+  padding: 5rem;
   font-size: 2.5rem;
 }
 
 .profile p {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .profile h1 {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  .profile p {
+    font-size: 25px;
+  }
 }

@@ -10,7 +10,7 @@
 
 .control label {
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   color: #353336;
   display: block;
   font-size: 1.5rem;
@@ -24,6 +24,7 @@
   border: 1px solid #38015c;
   padding: 0.25rem;
   background-color: #f7f0fa;
+  text-align: center;
 }
 
 .action {
@@ -44,4 +45,10 @@
   color: white;
   background-color: #8018c5;
   border-color: #540d83;
+}
+
+@media screen and (max-width: 900px) {
+  .control label {
+    font-size: 20px;
+  }
 }

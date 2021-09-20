@@ -22,7 +22,7 @@ const ProfileForm = () => {
         }),
         headers: {
           "Content-type": "application/json",
-          Authorization: "Milan password",
+          Authorization: "Bearer abc",
         },
       }
     ).then((res) => {
@@ -33,8 +33,9 @@ const ProfileForm = () => {
   return (
     <form className={classes.form} onSubmit={submitHandler}>
       <div className={classes.control}>
-        <label htmlFor="new-password">Please Enter New Password</label>
+        <label htmlFor="new-password">Change your old password here.</label>
         <input
+          placeholder="Enter new password"
           type="password"
           id="new-password"
           minLength="6"

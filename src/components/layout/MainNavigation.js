@@ -22,41 +22,43 @@ const MainNavigation = () => {
         </NavLink>
       </div>
       <nav className={classes.nav}>
-        <ul>
-          {isLoggedIn && (
-            <li>
-              <NavLink to="/quotes" activeClassName={classes.active}>
-                All Quotes
-              </NavLink>
-            </li>
-          )}
-          {isLoggedIn && (
-            <li>
-              <NavLink to="/newquotes" activeClassName={classes.active}>
-                Add a New Quote
-              </NavLink>
-            </li>
-          )}
-          {!isLoggedIn && (
-            <li>
-              <NavLink to="/login" activeClassName={classes.active}>
-                Login
-              </NavLink>
-            </li>
-          )}
-          {isLoggedIn && (
-            <li>
-              <NavLink to="/profile" activeClassName={classes.active}>
-                Profile
-              </NavLink>
-            </li>
-          )}
-          {isLoggedIn && (
-            <li onClick={logoutHandler}>
-              <button>Logout</button>
-            </li>
-          )}
-        </ul>
+        <menu className={classes.menu}>
+          <ul>
+            {isLoggedIn && (
+              <li>
+                <NavLink to="/quotes" activeClassName={classes.active}>
+                  All Quotes
+                </NavLink>
+              </li>
+            )}
+            {isLoggedIn && (
+              <li>
+                <NavLink to="/newquotes" activeClassName={classes.active}>
+                  Add a New Quote
+                </NavLink>
+              </li>
+            )}
+            {!isLoggedIn && (
+              <li>
+                <NavLink to="/login" activeClassName={classes.active}>
+                  Login
+                </NavLink>
+              </li>
+            )}
+            {isLoggedIn && (
+              <li>
+                <NavLink to="/profile" activeClassName={classes.active}>
+                  Profile
+                </NavLink>
+              </li>
+            )}
+            {isLoggedIn && (
+              <li onClick={logoutHandler}>
+                <button>Logout</button>
+              </li>
+            )}
+          </ul>
+        </menu>
       </nav>
     </header>
   );

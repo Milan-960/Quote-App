@@ -57,3 +57,11 @@
   background-color: #c291e2;
   color: #38015c;
 }
+
+@media (max-width: 900px) {
+  .home {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+  }
+}

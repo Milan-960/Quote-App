@@ -42,6 +42,7 @@ function App() {
               <QuoteDetail />
             </Route>
           )}
+
           {authCtx.isLoggedIn && (
             <Route path="/newquotes">
               <NewQuotes />
