@@ -101,7 +101,7 @@ const AuthForm = () => {
         </div>
         <div className={classes.actions}>
           {!isLoading && (
-            <button>{isLogin ? "Login" : "Create Account"}</button>
+            <button>{isLogin ? "Login" : "Create a Account"}</button>
           )}
           {isLoading && <p> Creating An Account!! </p>}
           <button
@@ -109,7 +109,7 @@ const AuthForm = () => {
             className={classes.toggle}
             onClick={switchAuthModeHandler}
           >
-            {isLogin ? "Create new account" : "Login with existing account"}
+            {isLogin ? "Create a new account" : "Login with existing account"}
           </button>
         </div>
       </form>
