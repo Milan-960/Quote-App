@@ -37,6 +37,7 @@ function App() {
           <Route path="/quotes" exact>
             <AllQuotes />
           </Route>
+
           {authCtx.isLoggedIn && (
             <Route path="/quotes/:quoteId">
               <QuoteDetail />
