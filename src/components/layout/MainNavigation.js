@@ -35,7 +35,7 @@ const MainNavigation = () => {
             {isLoggedIn && (
               <li>
                 <NavLink to="/newquotes" activeClassName={classes.active}>
-                  Add a New Quote
+                  Add a New Quotes
                 </NavLink>
               </li>
             )}
